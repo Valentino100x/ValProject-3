@@ -32,20 +32,13 @@
         #item2 > p{
             font-size: 2rem;
         }
-        #historyimage1{
+        .historyimage{
             object-fit: cover;
             filter: grayscale(0.7);
             transition: 0.4s ease-in-out;
+            border: 3px solid rgb(42, 42, 42);
         }
-        #historyimage2{
-            object-fit: cover;
-            filter: grayscale(0.7);
-            transition: 0.4s ease-in-out;
-        }
-        #historyimage2:hover{
-            filter: grayscale(0);
-        }
-        #historyimage1:hover{
+        .historyimage:hover{
             filter: grayscale(0);
         }
         #historyvideo{
@@ -71,6 +64,9 @@
         #historyvideolink:hover{
             color: rgb(255, 255, 255);
         }
+        h2{
+            font-size: 2.4rem;
+        }
     </style>
 </head>
 <body>
@@ -79,13 +75,13 @@
         <div class="navbar">
             <a href="index.html" class="navlinks">Home</a>
             <a href="history.html" class="navlinks">History</a>
-            <a href="index.html" class="navlinks">Partners</a>
+            <a href="partner.html" class="navlinks">Partners</a>
         </div>
     </header>
     <main>
         <div class="container">
             <div id="item1">
-                <img src="images/f6b40cab-859c-4965-a740-16d21f720d6d.png" alt="Construction of Naawi-Oodena" width="100%" height="400px" id="historyimage1">
+                <img src="images/f6b40cab-859c-4965-a740-16d21f720d6d.png" alt="Construction of Naawi-Oodena" width="100%" height="400px" class="historyimage">
             </div>
             <div id="item2">
                 <h1 id="history">History</h1>
@@ -96,7 +92,7 @@
         </div>
         <div class="container2">
             <div id="item2">
-                <img src="images/302113bb-5202-4a8f-bf6f-1161472c9094.png" alt="Wooden Community Centre in Naawi-Oodena" width="100%" height="400px" id="historyimage2">
+                <img src="images/302113bb-5202-4a8f-bf6f-1161472c9094.png" alt="Wooden Community Centre in Naawi-Oodena" width="100%" height="400px" class="historyimage">
             </div>
             <div id="item1">
             <iframe width="560" height="315" id="historyvideo" src="https://www.youtube.com/embed/cwM08UJRQR0?si=8pQADs5qATNCw2H2" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>

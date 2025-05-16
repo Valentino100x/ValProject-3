@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Naawi-Oodena/Partners</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        .container{
+            display: grid;
+            grid-template: repeat(10, 9.8%) / repeat(10, 9.8%);
+            height: 600px;
+            background-color: rgb(42, 42, 42);;
+            grid-gap: 3px;
+        }
+        #item1{
+            grid-row: 1 / 1;
+            grid-column: 5 / 11;
+        }
+        #item2{
+            background-color: rgb(99, 45, 45);
+            color: white;
+            grid-row: 1 / 5;
+            grid-column: 1 / 5;
+            position: relative;
+        }
+        #item3{
+            grid-row: 5 / 11;
+            grid-column: 1 / 5;
+        }
+        #item4{
+            background-color: rgb(99, 45, 45);
+            color: white;
+            grid-row: 5 / 11;
+            grid-column: 5 / 11;
+            position: relative;
+        }
+        #partnerimages{
+            object-fit: cover;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div id="title"><a href="partner.html"><img src="images/Naawi-Oodena Logo.png" alt="Naawi-Oodena Logo" height="100px" id="titleimage"></a></div>
+        <div class="navbar">
+            <a href="index.html" class="navlinks">Home</a>
+            <a href="history.html" class="navlinks">History</a>
+            <a href="partner.html" class="navlinks">Partners</a>
+        </div>
+    </header>
+    <main>
+        <div class="container">
+            <div id="item1">
+                <img src="images/a17c6a47-7e1f-4f39-b7b2-6f65f56bead6.png" alt="Logo of the Treaty 1 organization" width="100%" height="350px" id="partnerimages">
+            </div>
+            <div id="item3">
+                <img src="images/dc530793-4a6a-4690-bfc4-d92054a44b7c.png" alt="Logo of the Canada Lands Company" width="100%" height="360px" id="partnerimages">
+            </div>
+            <div id="item2">
+                <h1 style="text-align:center;margin-top:40px;"><i>Treaty 1 Development Corporation</i></h1>
+                <p style="text-align:center;">Treaty 1 Development Corporation has majorly helped build Naawi-Oodena and Treaty 1 itself fought for the land to be used for Naawi-Oodena. Treaty 1 has been our main partner for the past 30 years and has allowed for Naawi-Oodena from becoming a dream into an active community.</p>
+            </div>
+            <div id="item4">
+                <h1 style="text-align:center;margin-top:40px;"><i>Canada Lands Company</i></h1>
+                <p style="text-align:center;">Canada Lands Company is a self-financing federal Crown corporation. This means it is owned by the government but runs as its own organization. The Canada Lands Company has helped us embrace the land that we won and they have allowed us to use it for its rightful purpose. Canada Lands Company has helped integrating the community with land and helped in the process of using the land. We are very grateful for the Canada Lands Company inclusion of indigenous culture into its p</p>
+            </div>
+        </div>
+    </main>
+</body>
+</html>
