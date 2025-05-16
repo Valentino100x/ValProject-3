@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Naawi-Oodena/Home</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        .container{
+            display: grid;
+            grid-template: repeat(8, 12.5%) / repeat(8, 12.5%);
+            height: 400px;
+        }
+        #item1{
+            background-color: orange;
+            grid-row: 1 / 9;
+            grid-column: 3 / 9;
+        }
+        #item2{
+            background: #020024;
+            background: linear-gradient(90deg, rgba(2, 0, 36, 1) 0%, rgba(9, 9, 121, 1) 100%);
+            color: white;
+            grid-row: 1 / 9;
+            grid-column: 1 / 5;
+            position: relative;
+        }
+        h3{
+            margin: 0px;
+        }
+        h1{
+            margin-bottom: 0px;
+        }
+        #landinglink{
+            padding: 10px;
+            background-color: rgb(0, 0, 134);
+            color: rgb(255, 255, 255);
+            text-decoration: none;
+            border: 2px solid black;
+            border-radius: 10px;
+            margin: 10px;
+            position: absolute;
+            right: 60%;
+            left: 40%;
+            top: 50%;
+            width: 90px;
+            transform: scale(1.4);
+            transition: 0.3s ease;
+        }
+        #landinglink:hover{
+            background-color: rgb(1, 1, 163);
+        }
+        p{
+            font-size: 1.8rem;
+        }
+        #homeimage{
+            object-fit: cover;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div id="title"><a href="index.html"><img src="images/Naawi-Oodena Logo.png" alt="Naawi-Oodena Logo" height="100px" id="titleimage"></a></div>
+        <div class="navbar">
+            <a href="index.html" class="navlinks">Home</a>
+            <a href="history.html" class="navlinks">History</a>
+            <a href="index.html" class="navlinks">Partners</a>
+        </div>
+    </header>
+    <main>
+        <div class="container">
+            <div id="item1">
+                <img src="images/63b0681a-bccf-403d-94ad-77803ddc0f10.png" alt="scenic view of Naawi-Oodena" width="100%" height="400px" id="homeimage">
+            </div>
+            <div id="item2">
+                <h1 style="text-align:center;margin-top:40px;"><i>Naawi-Oodena</i></h1>
+                <h3 style="text-align:center;">The Place Where Dreams Are Born</h3>
+                <p style="text-align:center;">Naawi-Oodena is a beautiful reserve that is accomadating for 3000 properties,<br/> if you would like to be apart of this community click the button below<br/> to learn more about our stunning reserve.</p>
+                <a href="history.html" id="landinglink">Learn More</a>
+            </div>
+        </div>
+        <div style="text-align: center;">
+            <h1><u>The Land</u></h1>
+            <p>Naawi-Oodena is on about 160 acres of land and has multiple low to medium density homes. We also have the Tuxedo Community Centre, Corydon Community Centre, and Manitoba Youth Centre.<br/> This land used to be the Kapyong Barracks but after its closure in June of 2004 we fought hard to gain control of the land which lasted up until August 30, 2019 when we finally earned the land we deserved.<br/> Our win over the canadian government showed all indigenous communities that they can and should claim the land that was promised to them hundreds of years ago.</p>
+        </div>
+    </main>
+    <footer>
+        <div class="footer">
+            <p><br/>&copy;Naawi-Oodena 2050 Copyright</p>
+        </div>
+    </footer>
+</body>
+</html>
