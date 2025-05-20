@@ -1,94 +1,119 @@
-<!DOCTYPE html>
-<html lang="en">
+<!DOCTYPE html> <!-- Declares this is an HTML5 document -->
+<html lang="en"> <!-- Root element of the page with language set to English -->
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Naawi-Oodena/Home</title>
-    <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8"> <!-- Character encoding set to UTF-8 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Makes site responsive on mobile devices -->
+    <title>Naawi-Oodena/Home</title> <!-- Title of the page shown in browser tab -->
+    <link rel="stylesheet" href="style.css"> <!-- Links external CSS file -->
     <style>
         .container{
-            display: grid;
-            grid-template: repeat(8, 12.5%) / repeat(8, 12.5%);
+            display: -ms-grid;
+            display: -webkit-grid;
+            display: grid; /* Enables CSS Grid layout */
+            grid-template: repeat(8, 12.5%) / repeat(8, 12.5%); /* Creates 8 equal rows and columns, each 12.5% */
             height: 400px;
+            margin-top: 5px; /* Adds space above the grid container */
         }
         #item1{
-            background-color: orange;
-            grid-row: 1 / 9;
-            grid-column: 3 / 9;
-            border: 3px solid rgb(42, 42, 42);
+            -ms-grid-row: 1;
+            -ms-grid-column: 3;
+            grid-row: 1 / 9; /* Makes this grid item span from row 1 to 9 */
+            grid-column: 3 / 9; /* Makes this item span from column 3 to 9 */
+            border: 3px solid rgb(42, 42, 42); /* Adds a border around this item */
         }
         #item2{
-            background: #020024;
-            background: linear-gradient(90deg, rgba(2, 0, 36, 1) 0%, rgba(9, 9, 121, 1) 100%);
+            background: #020024; /* Fallback solid background color */
+            background: -webkit-linear-gradient(90deg, rgba(2, 0, 36, 1) 0%, rgba(9, 9, 121, 1) 100%);
+            background: linear-gradient(90deg, rgba(2, 0, 36, 1) 0%, rgba(9, 9, 121, 1) 100%); /* Creates a horizontal gradient background */
             color: white;
+            -ms-grid-row: 1;
+            -ms-grid-column: 1;
             grid-row: 1 / 9;
             grid-column: 1 / 5;
-            position: relative;
+            position: relative; /* Allows absolute positioning inside this element */
             border: 3px solid rgb(42, 42, 42);
         }
         h3{
-            margin: 0px;
+            margin: 0px; /* Removes default margin around h3 headings */
         }
         h1{
-            margin-bottom: 0px;
+            margin-bottom: 0px; /* Removes margin below h1 headings */
         }
         #landinglink{
-            padding: 10px;
+            padding: 10px; /* Adds space inside the button */
             background-color: rgb(0, 0, 134);
             color: rgb(255, 255, 255);
-            text-decoration: none;
+            text-decoration: none; /* Removes underline from the link */
             border: 2px solid black;
-            border-radius: 10px;
+            border-radius: 10px; /* Rounds the corners */
             margin: 10px;
-            position: absolute;
-            right: 60%;
-            left: 40%;
-            top: 50%;
+            position: absolute; /* Positions relative to nearest positioned ancestor */
+            right: 60%; /* Moves element 60% away from the right edge */
+            left: 40%; /* Moves element 40% away from the left edge */
+            top: 50%; /* Moves element 50% from the top */
             width: 90px;
-            transform: scale(1.4);
-            transition: 0.3s ease;
+            -webkit-transform: scale(1.4); /* Enlarges the button */
+            -ms-transform: scale(1.4);
+            transform: scale(1.4); /* Enlarges the button */
+            -webkit-transition: 0.3s ease; /* Smoothly transitions property changes */
+            -o-transition: 0.3s ease;
+            transition: 0.3s ease; /* Smoothly transitions property changes */
+            -webkit-transition-timing-function: cubic-bezier(0.29, 1.01, 1, -0.68); /* Custom easing curve for a flicker effect */
+            transition-timing-function: cubic-bezier(0.29, 1.01, 1, -0.68); /* Custom easing curve for a flicker effect */
         }
         #landinglink:hover{
-            background-color: rgb(1, 1, 163);
+            background-color: rgb(1, 1, 163); /* Changes button color on hover */
         }
         p{
             font-size: 1.8rem;
         }
         #homeimage{
-            object-fit: cover;
+            -o-object-fit: cover;
+            object-fit: cover; /* Makes image fill its container without distortion */
         }
-    </style>
+</style>
+
 </head>
-<body>
-    <header>
-        <div id="title"><a href="index.html"><img src="images/Naawi-Oodena Logo.png" alt="Naawi-Oodena Logo" height="100px" id="titleimage"></a></div>
-        <div class="navbar">
-            <a href="index.html" class="navlinks">Home</a>
+<body> <!-- Main body of the page -->
+
+    <header> <!-- Top section, typically for logo and navigation -->
+        <div id="title"> <!-- Div container for site title/logo -->
+            <a href="index.html"> <!-- Link to homepage -->
+                <img src="images/Naawi-Oodena Logo.png" alt="Naawi-Oodena Logo" height="100px" id="titleimage"> <!-- Logo image with alt text and height -->
+            </a>
+        </div>
+        <div class="navbar"> <!-- Navigation bar container -->
+            <a href="index.html" class="navlinks">Home</a> <!-- Navigation link to homepage -->
             <a href="history.html" class="navlinks">History</a>
             <a href="partner.html" class="navlinks">Partners</a>
+            <a href="contact.html" class="navlinks">Contact Us</a>
         </div>
     </header>
-    <main>
-        <div class="container">
-            <div id="item1">
-                <img src="images/63b0681a-bccf-403d-94ad-77803ddc0f10.png" alt="scenic view of Naawi-Oodena" width="100%" height="396px" id="homeimage">
+
+    <main> <!-- Main content area of the page -->
+        <div class="container"> <!-- Grid layout container -->
+            <div id="item1"> <!-- Grid item for image -->
+                <img src="images/63b0681a-bccf-403d-94ad-77803ddc0f10.png" alt="scenic view of Naawi-Oodena" width="100%" height="396px" id="homeimage"> <!-- Full-width, fixed height image -->
             </div>
-            <div id="item2">
-                <h1 style="text-align:center;margin-top:40px;"><i>Naawi-Oodena</i></h1>
+            <div id="item2"> <!-- Grid item for text and button -->
+                <h1 style="text-align:center;margin-top:40px;"><i>Naawi-Oodena</i></h1> <!-- Heading with italic text and top margin -->
                 <h3 style="text-align:center;">The Place Where Dreams Are Born</h3>
-                <p style="text-align:center;">Naawi-Oodena is a beautiful reserve that is accomadating for 3000 properties,<br/> if you would like to be apart of this community click the button below<br/> to learn more about our stunning reserve.</p>
-                <a href="history.html" id="landinglink">Learn More</a>
+                <p style="text-align:center;">Naawi-Oodena is a beautiful reserve that is accomadating for 3000 properties,<br/> if you would like to be apart of this community click the button below<br/> to learn more about our stunning reserve.</p> <!-- Center-aligned paragraph with line breaks -->
+                <a href="history.html" id="landinglink">Learn More</a> <!-- Styled link acting like a button -->
             </div>
         </div>
-        <div style="text-align: center;">
-            <h1><u>The Land</u></h1>
-            <p>Naawi-Oodena is on about 160 acres of land and has multiple low to medium density homes. We also have the Tuxedo Community Centre, Corydon Community Centre, and Manitoba Youth Centre.<br/> This land used to be the Kapyong Barracks but after its closure in June of 2004 we fought hard to gain control of the land which lasted up until August 30, 2019 when we finally earned the land we deserved.<br/> Our win over the canadian government showed all indigenous communities that they can and should claim the land that was promised to them hundreds of years ago.</p>
+
+        <div style="text-align: center;"> <!-- Centered block of content -->
+            <h1><u>The Land</u></h1> <!-- Heading with underline -->
+            <p>Naawi-Oodena is on about 160 acres of land and has multiple low to medium density homes. We also have the Tuxedo Community Centre, Corydon Community Centre, and Manitoba Youth Centre.<br/> This land used to be the Kapyong Barracks but after its closure in June of 2004 we fought hard to gain control of the land which lasted up until August 30, 2019 when we finally<br/> earned the land we deserved. Our win over the canadian government showed all indigenous communities that they can and should claim the land that was promised to them hundreds of years ago.</p>
         </div>
     </main>
-    <footer>
-        <div class="footer">
-            <p><br/>&copy;Naawi-Oodena 2050 Copyright</p>
+
+    <footer> <!-- Bottom of the page for copyright info -->
+        <div class="footer"> <!-- Footer content container -->
+            <p><br/>&copy;Naawi-Oodena 2050 Copyright <span style="color:rgb(215, 215, 215);font-size:1.5rem;">&lt;All Images Generated By Magic Hour&gt;</span></p>
         </div>
     </footer>
+
 </body>
 </html>
