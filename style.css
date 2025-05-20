@@ -1,28 +1,42 @@
+/*
+Colour Family: Monochromatic greys with complementary deep blue.
+Chosen for a modern, calm, and professional tone reflecting unity and strength.
+Grey symbolizes land, history, and resilience; blue represents the open sky and hope.
+Supports Naawi-Oodena’s vision as a modern Indigenous community space.
+*/
+
 *{
-    letter-spacing: 0.2px;
-    line-height: 25px;
-    word-spacing: 0.2px;
+    letter-spacing: 0.2px; /* Adds tiny space between letters */
+    line-height: 25px; /* Sets the space between lines */
+    word-spacing: 0.2px; /* Adds a little space between words */
 }
 html{
-    font-size: 62.5%;
+    font-size: 62.5%; /* Makes 1rem = 10px for easy rem calculations */
 }
 #title {
-    background-color: rgb(81, 81, 81);
-    text-align: center;
-    color: white;
+    background-color: rgb(81, 81, 81); /* Sets a dark grey background */
+    text-align: center; /* Centers content horizontally */
+    color: white; /* Sets text color to white */
 }
 #titleimage{
-    transition: 0.3s ease-in-out;
+    -webkit-transition: 0.3s ease-in-out;
+    -moz-transition: 0.3s ease-in-out;
+    -o-transition: 0.3s ease-in-out;
+    transition: 0.3s ease-in-out; /* Smoothly animates changes over 0.3s */
 }
 #titleimage:hover{
-    transform: scale(1.1);
+    -webkit-transform: scale(1.1);
+    -moz-transform: scale(1.1);
+    -ms-transform: scale(1.1);
+    -o-transform: scale(1.1);
+    transform: scale(1.1); /* Grows the element slightly when hovered */
 }
 .navbar{
     background-color: rgb(118, 118, 118);
     text-align: center;
     color: white;
-    width: 100%;
-    padding:10px 0px 10px 0px;
+    width: 100%; /* Makes this element stretch full width */
+    padding:10px 0px 10px 0px; /* Adds spacing inside the element */
 }
 .navlinks{
     background-color: grey;
@@ -30,38 +44,43 @@ html{
     padding: 5px;
     padding-left: 10px;
     padding-right: 10px;
-    margin-left: 10px;
-    margin-right: 10px;
-    border: 2px solid black;
-    border-radius: 5px;
-    text-decoration: none;
+    margin-left: 10px; /* Adds space outside to the left */
+    margin-right: 10px; /* Adds space outside to the right */
+    border: 2px solid black; /* Adds a solid border */
+    border-radius: 5px; /* Rounds the corners a bit */
+    text-decoration: none; /* Removes underline from links */
+    -webkit-transition: 0.3s ease-in-out;
+    -moz-transition: 0.3s ease-in-out;
+    -o-transition: 0.3s ease-in-out;
     transition: 0.3s ease-in-out;
 }
 .navlinks:hover{
     background-color: rgb(155, 155, 155);
 }
 .container{
-    display: grid;
-    grid-template: repeat(5, 20%) / repeat(5, 20%);
+    display: -ms-grid;
+    display: -webkit-grid;
+    display: grid; /* Turns this element into a grid layout */
+    grid-template: repeat(5, 20%) / repeat(5, 20%); /* 5 rows & 5 columns, each 20% size */
     height: 400px;
 }
 .footer{
     background-color: rgb(81, 81, 81);
-    height: 65px;
-    position: relative;
-    bottom: 0;
+    height: 65px; /* Sets the height of this element */
+    position: relative; /* Positions element relative to normal flow */
+    bottom: 0; /* Positions it at the bottom (if using relative/absolute) */
     text-align: center;
-    font-size: 1.8rem;
+    font-size: 1.8rem; /* Sets font size using rem units */
 }
 body{
-    background-color: rgb(42, 42, 42); 
-    color:white;
+    background-color: rgb(42, 42, 42);
+    color: white;
 }
 h1{
-    font-size: 3rem;
+    font-size: 3rem; /* Large font size for headings */
 }
 h3{
-    font-size: 2rem;
+    font-size: 2rem; /* Medium font size for subheadings */
 }
 p{
     font-size: 1.8rem;
