@@ -1,71 +1,96 @@
-<!DOCTYPE html>
-<html lang="en">
+<!DOCTYPE html> <!-- Tells the browser this is an HTML5 document -->
+<html lang="en"> <!-- Root element of the page, with language set to English -->
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Naawi-Oodena/Partners</title>
-    <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8"> <!-- Sets character encoding to UTF-8 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Makes site responsive on mobile -->
+    <title>Naawi-Oodena/Partners</title> <!-- Page title shown in browser tab -->
+    <link rel="stylesheet" href="style.css"> <!-- Links external CSS file -->
     <style>
         .container{
-            display: grid;
-            grid-template: repeat(10, 9.8%) / repeat(10, 9.8%);
+            display: -ms-grid;
+            display: -webkit-grid;
+            display: grid; /* Uses CSS Grid layout */
+            grid-template: repeat(10, 9.8%) / repeat(10, 9.8%); /* 10 rows and 10 columns each 9.8% */
             height: 600px;
-            background-color: rgb(42, 42, 42);;
-            grid-gap: 3px;
+            background-color: rgb(42, 42, 42);
+            grid-gap: 3px; /* Adds space between grid items */
         }
         #item1{
-            grid-row: 1 / 1;
-            grid-column: 5 / 11;
-        }
-        #item2{
-            background-color: rgb(99, 45, 45);
+            background-color: rgba(9, 9, 121, 1);
             color: white;
+            -ms-grid-row: 1;
+            -ms-grid-column: 1;
             grid-row: 1 / 5;
             grid-column: 1 / 5;
-            position: relative;
+            position: relative; /* Allows for positioning adjustments if needed */
+        }
+        #item2{
+            -ms-grid-row: 1;
+            -ms-grid-column: 5;
+            grid-row: 1 / 1; /* Places the item on row 1 */
+            grid-column: 5 / 11; /* Spans from column 5 to 11 */
         }
         #item3{
+            -ms-grid-row: 5;
+            -ms-grid-column: 1;
             grid-row: 5 / 11;
             grid-column: 1 / 5;
         }
         #item4{
-            background-color: rgb(99, 45, 45);
+            background-color: rgba(9, 9, 121, 1);
             color: white;
+            -ms-grid-row: 5;
+            -ms-grid-column: 5;
             grid-row: 5 / 11;
             grid-column: 5 / 11;
             position: relative;
         }
         #partnerimages{
-            object-fit: cover;
+            -o-object-fit: cover;
+            object-fit: cover; /* Ensures images fill their container nicely without distortion */
         }
     </style>
 </head>
-<body>
-    <header>
-        <div id="title"><a href="partner.html"><img src="images/Naawi-Oodena Logo.png" alt="Naawi-Oodena Logo" height="100px" id="titleimage"></a></div>
+<body> <!-- Main content of the page -->
+
+    <header> <!-- Top section of the page, usually for branding and navigation -->
+        <div id="title" tabindex="0"> <!-- Div container for logo/title -->
+            <a href="partner.html">
+                <img src="images/Naawi-Oodena Logo.png" alt="Naawi-Oodena Logo" height="100px" id="titleimage">
+            </a>
+        </div>
         <div class="navbar">
-            <a href="index.html" class="navlinks">Home</a>
-            <a href="history.html" class="navlinks">History</a>
-            <a href="partner.html" class="navlinks">Partners</a>
+            <a href="index.html" class="navlinks" tabindex="0">Home</a>
+            <a href="history.html" class="navlinks" tabindex="0">History</a>
+            <a href="partner.html" class="navlinks" tabindex="0">Partners</a>
+            <a href="contact.html" class="navlinks" tabindex="0">Contact Us</a>
         </div>
     </header>
-    <main>
+
+    <main tabindex="0">
         <div class="container">
-            <div id="item1">
-                <img src="images/a17c6a47-7e1f-4f39-b7b2-6f65f56bead6.png" alt="Logo of the Treaty 1 organization" width="100%" height="350px" id="partnerimages">
-            </div>
-            <div id="item3">
-                <img src="images/dc530793-4a6a-4690-bfc4-d92054a44b7c.png" alt="Logo of the Canada Lands Company" width="100%" height="360px" id="partnerimages">
-            </div>
-            <div id="item2">
+            <div id="item1" tabindex="0">
                 <h1 style="text-align:center;margin-top:40px;"><i>Treaty 1 Development Corporation</i></h1>
                 <p style="text-align:center;">Treaty 1 Development Corporation has majorly helped build Naawi-Oodena and Treaty 1 itself fought for the land to be used for Naawi-Oodena. Treaty 1 has been our main partner for the past 30 years and has allowed for Naawi-Oodena from becoming a dream into an active community.</p>
             </div>
-            <div id="item4">
+            <div id="item2" tabindex="0">
+                <img src="images/a17c6a47-7e1f-4f39-b7b2-6f65f56bead6.png" alt="Logo of the Treaty 1 organization" width="100%" height="350px" id="partnerimages">
+            </div>
+            <div id="item3" tabindex="0">
+                <img src="images/dc530793-4a6a-4690-bfc4-d92054a44b7c.png" alt="Logo of the Canada Lands Company" width="100%" height="360px" id="partnerimages">
+            </div>
+            <div id="item4" tabindex="0">
                 <h1 style="text-align:center;margin-top:40px;"><i>Canada Lands Company</i></h1>
                 <p style="text-align:center;">Canada Lands Company is a self-financing federal Crown corporation. This means it is owned by the government but runs as its own organization. The Canada Lands Company has helped us embrace the land that we won and they have allowed us to use it for its rightful purpose. Canada Lands Company has helped integrating the community with land and helped in the process of using the land. We are very grateful for the Canada Lands Company inclusion of indigenous culture into its p</p>
             </div>
         </div>
     </main>
+
+    <footer tabindex="0">
+        <div class="footer">
+            <p><br/>&copy;Naawi-Oodena 2050 Copyright <span style="color:rgb(215, 215, 215);font-size:1.5rem;">&lt;All Images Generated By Magic Hour&gt;</span></p>
+        </div>
+    </footer>
+
 </body>
 </html>
